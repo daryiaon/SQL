@@ -1,0 +1,26 @@
+Below is my ice cream store database, it is designed to help manage inventory and provide pricing information for different ice cream flavors, including whether they cater to vegan customers. It can be used to make informed decisions about pricing, inventory management, and customer service.
+
+
+CREATE TABLE ice_cream (item INTEGER, name TEXT, size TEXT, price INTEGER, vegan_option TEXT);
+
+INSERT INTO ice_cream VALUES (1,"Vanilla","S M L","$2.50 $3.50 $4.50", "yes");
+INSERT INTO ice_cream VALUES (2,"Chocolate", "S M L", "$2.50 $3.50 $4.50", "yes");
+INSERT INTO ice_cream VALUES (3,"Strawberry", "S M L","$2.50 $3.50 $4.50", "yes");
+INSERT INTO ice_cream VALUES (4,"Cookies&Cream", "S M L","$2.75 $3.75 $4.75", "yes");
+INSERT INTO ice_cream VALUES (5, "Mint Chocolate chip", "S M L","$2.75 $3.75 $4.75", "yes");
+INSERT INTO ice_cream VALUES (6, "Lemon", "S M L", "$2.50 $3.50 $4.50","yes");
+INSERT INTO ice_cream VALUES (7, "Butter Pecan", "S M L", "$2.75 $3.75 $4.75", "yes");
+INSERT INTO ice_cream VALUES (8, "Strawberry Cheesecake", "S M L", "$3.00 $4.00 $5.00", "No");
+INSERT INTO ice_cream VALUES (9, "Peach Cobbler", "S M L", "$3.00 $4.00 $5.00", "yes");
+INSERT INTO ice_cream VALUES (10, "Rocky Road", "S M L", "$2.75 $3.75 $4.75", "No");
+INSERT INTO ice_cream VALUES (11, "Superman", "S M L", "$2.75 $3.75 $4.75", "No");
+INSERT INTO ice_cream VALUES (12, "Cookie Dough", "S M L", "$2.75 $3.75 $4.75", "No");
+INSERT INTO ice_cream VALUES (13, "Birthday Cake","S M L", "$2.75 $3.75 $4.75", "Yes");
+INSERT INTO ice_cream VALUES (14, "Coffee", "S M L", "$2.75 $3.75 $4.75", "yes");
+INSERT INTO ice_cream VALUES (15, "Salted Caramel", "S M L", "$2.75 $3.75 $4.75", "Yes");
+SELECT * FROM ice_cream;
+
+Select * FROM ice_cream ORDER BY price;
+
+SELECT MAX(item) FROM ice_cream;
+
