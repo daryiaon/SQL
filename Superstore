@@ -1,0 +1,10 @@
+SELECT * FROM superstore ORDER BY price;
+
+SELECT SUM(price)
+FROM superstore 
+WHERE category= 'Kitchen Supplies';
+
+SELECT COUNT(stock_quantity) AS Stocks_under50items, item_name, category, stock_quantity
+FROM superstore
+WHERE stock_quantity < 50
+GROUP BY item_name
